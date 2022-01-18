@@ -1,4 +1,9 @@
 import React from 'react';
+import Utilisateurs from './../Utilisateurs/Utilisateurs';
+import Livres from './../Livres/Livres';
+import Listeauteurs from './../Listeauteurs/Listeauteurs';
+import Listegenres from './../Listegenres/Listegenres';
+import Stocklivres from './../Stocklivres/Stocklivres';
 import './Bibliotheque.css';
 
 //--------------------------------------- Composant Bibliothèque---------------------------------------------//
@@ -74,7 +79,8 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       const consulterGenres = this.state.consulterGenres; //Constante qui stock le state de consulterGenres
   
       let affichage;
-  
+      
+      const utilisateur = this.props.utilisateur;
       const nomUtilisateur = this.props.utilisateur[this.id]; //Constante qui stock le nom de l'utilisateur dont on veut consulter la collection de livre
       const biblioUtilisateur = this.props.utilisateur[this.id].livresID; //Constante qui stock la collection de livre de l'utilisateur (sous forme de tableau contenant les ID des livres) dont on veut consulter la collection
       const stockLivre = this.props.livre; //On déclare la variable stockLivre pour récupérer les propriétés de livre

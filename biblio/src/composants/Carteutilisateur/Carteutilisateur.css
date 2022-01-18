@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+
+}
+
+.container-button {
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    position: relative;
+    top: -65px;
+    left: 200px;
+
+}
+
+.container-carte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 900px;
+}
+
+.collection-carte {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.affichage-carte{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    max-width: 900px;
+}
+
+
+.carte {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 250px;
+    min-height: 350px;
+    /* border: solid 1px #1A1A23 ; */
+    border-radius: 20px;
+
+    background: #fdfdfd;
+    box-shadow:
+        /* inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    inset -7px -7px 10px 0px rgba(0,0,0,.1), */
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, .3),
+        -4px -4px 6px rgba(116, 125, 136, .2);
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+}
+
+.image-carte {
+    height: 140px;
+    border-radius: 20px 20px 0 0;
+}
+
+.image-carte>img {
+
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.corps-carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.titre-carte{
+    text-align: center;
+}
+
+.identite-personne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bouton-carte {
+    padding: 0 10px 10px;
+}
+
+.btn {
+    margin: 3px;
+    max-width: 182px;
+}
