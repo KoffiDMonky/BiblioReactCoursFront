@@ -20,12 +20,12 @@ function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'aute
   return (
     <div>
       <div className="carte auteur">
-        <div className="image-carte d-flex justify-content-center align-items-center ">
+        {/* <div className="image-carte d-flex justify-content-center align-items-center ">
           <img
             src="assets/images/user.jfif"
             alt=""
           ></img>
-        </div>
+        </div> */}
         <div className="corps-carte">
           <div className="identite-livre d-flex flex-column justify-content-center align-items-center">
             <div className="titre-carte d-flex flex-column justify-content-center align-items-center">

@@ -15,14 +15,13 @@ function Cartelivre(props) { //Fonction permettant de créer une carte livre et 
       const body = document.body;
       body.classList.toggle("modal-ouverte");
 
-      // $('body').toggleClass('modal-ouverte'); //ajouter la class 'modal-ouvert' au body pour bloque rla scroll barre et inversement
     };
   
     return (
       //Affichage du composant carte livre
       <div>
-        <div className="carte livre d-flex flex-wrap justify-content-center align-items-center">
-          <div className="image-carte d-flex justify-content-center align-items-center ">
+        <div className="carte livre">
+          <div className="image-carte">
             <img
               className="mh-100"
               src="assets/images/icon_livre.jpg"
@@ -30,28 +29,28 @@ function Cartelivre(props) { //Fonction permettant de créer une carte livre et 
             ></img>
           </div>
           <div className="corps-carte">
-            <div className="identite-livre d-flex flex-column justify-content-center align-items-center">
-              <div className="titre-carte d-flex flex-column justify-content-center align-items-center">
+            <div className="identite-livre">
+              <div className="titre-carte">
                 <h5>{livre.titre}</h5>
               </div>
-              <div className="genre-carte d-flex flex-column justify-content-center align-items-center">
+              <div className="genre-carte">
                 Genre: {livre.genre}
               </div>
-              <div className="auteur-carte d-flex flex-column justify-content-center align-items-center">
-                Auteur: {livre.auteur}
+              <div className="auteur-carte">
+                Auteur: {livre.auteur.nomAuteur}
               </div>
             </div>
-            <div className="bouton-carte d-flex flex-row flex-wrap align-items-center justify-content-center">
+            <div className="bouton-carte">
               <button
-                className="btn btn-info w-100 consulter"
+                className="btn btn-info w-100 "
                 onClick={toggleModalLivre}
               >
                 Consulter
               </button>
   
-              <button className="btn btn-warning w-40 editer">Editer</button>
+              <button className="btn btn-warning w-40 ">Editer</button>
               <button
-                className="btn btn-danger w-40 supprimer"
+                className="btn btn-danger w-40 "
                 // onClick={handleClickSupprimer}
               >
                 Supprimer

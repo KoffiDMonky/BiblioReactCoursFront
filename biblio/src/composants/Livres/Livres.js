@@ -9,12 +9,11 @@ function Livres(props) { //La fonction Livres permet d'afficher la liste des liv
     const stockLivre = props.stock;//On déclare la variable stockLivre pour récupérer toute la collection de livre disponible dans la bibliothèque
     const biblio = props.biblio;//On déclare la variable biblio pour récupérer le tableau contenant les livres (sous forme d'ID) détenu par un utilisateur 
   
-  
+
     const collecLivre = [] //On déclare un tableau de collection de livre vide
     for (var index = 0; biblio[index]; index++) { //On itère dans la biblio de l'utilisateur afin de récupérer les données des livres correspondant dans la const stockLivre
       collecLivre.push(stockLivre[biblio[index]])
     }
-  
     
     //On itère dans le tableau d'objets livre pour afficher chaque livre dans une carte
     const collectionLivre = collecLivre.map((livre, k) => (

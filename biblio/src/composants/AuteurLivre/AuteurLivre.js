@@ -7,6 +7,8 @@ function AuteurLivre(props) { //Fonction permettant d'afficher le composant "acc
 
     //On stock si dessous les propriétés des auteurs pour le afficher dynamiquement et les variable d'état permettant d'ouvrir/fermer le composant accordéon
     const auteurLivre = props.auteur;
+    const bio = auteurLivre.bio;
+    const affichageBibliographie = props.bibliographie;
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
   
@@ -25,7 +27,7 @@ function AuteurLivre(props) { //Fonction permettant d'afficher le composant "acc
       <div onClick={toggleState} className="auteur">
         <div className="nom-auteur">
           <h3>
-            {auteurLivre} {/* Auteur: {auteur.prenom} {auteur.prenom} */}
+            {auteurLivre.nomAuteur} {/* Auteur: {auteur.prenom} {auteur.prenom} */}
           </h3>
           <i className="fas fa-chevron-down"></i>
         </div>
@@ -39,11 +41,10 @@ function AuteurLivre(props) { //Fonction permettant d'afficher le composant "acc
           style={{ height: toggle ? `${heightEl}` : "0px" }}
         >
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nunc
-            sollicitudin, lobortis ligula eget, suscipit magna.
+            {bio}
           </p>
           <div className="boutons-auteur">
-            <button className=" btn btn-light" >Bibliographie</button>
+            <button className=" btn btn-light" onClick={affichageBibliographie} >Bibliographie</button>
           </div>
           
           
