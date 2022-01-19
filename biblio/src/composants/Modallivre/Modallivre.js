@@ -1,6 +1,6 @@
 import "./Modallivre.css";
 import React, { useState } from 'react';
-import AuteurLivre from "../AuteurLivre/AuteurLivre";
+import AccordeonAuteur from "../AccordeonAuteur/AccordeonAuteur";
 import Biblioauteur from "../Biblioauteur/Biblioauteur";
 
 //--------------------------------------- Composant Modal Livre---------------------------------------------//
@@ -10,10 +10,13 @@ function Modallivre(props) {//Fonction permettant d'afficher la fenêtre modale 
   let affichage;
   //On stock si dessous les propriétés des livres pour le afficher dynamiquement
   const livre = props.livre;
+  const idLivre = livre.id;
   const auteur = livre.auteur;
   const genre = livre.genre;
   const resume = livre.resume;
   const toggleModalLivre = props.toggleModal;
+  
+
   const [consulterBiblioAuteur, setConsulterBiblioAuteur] = useState(false);
 
   const toggleBibliographie = () => {
@@ -30,7 +33,7 @@ function Modallivre(props) {//Fonction permettant d'afficher la fenêtre modale 
   if (consulterBiblioAuteur) {
     //Si consulterBiblioAuteur: True, on affiche la bibliographie de l'auteur
 
-    affichage = <Biblioauteur auteur={auteur} bibliographie={toggleBibliographie} />
+    affichage = <Biblioauteur auteur={auteur} id={props.id} bibliographie={toggleBibliographie}/>
       
   } else {
     //Si consulterAuteurs: True, on affiche la liste d'auteur
@@ -39,7 +42,7 @@ function Modallivre(props) {//Fonction permettant d'afficher la fenêtre modale 
    
         <div className="fenetre-modal">
           <h1>{livre.titre}</h1>
-          <AuteurLivre auteur={auteur} bibliographie={toggleBibliographie} />
+          <AccordeonAuteur auteur={auteur} bibliographie={toggleBibliographie} id={idLivre} />
           <h6>Genre littéraire: {genre}</h6>
           <p>{resume}</p>
           <button

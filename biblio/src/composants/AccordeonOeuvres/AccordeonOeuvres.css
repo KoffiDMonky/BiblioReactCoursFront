@@ -1,0 +1,56 @@
+.oeuvre{
+    max-width: 400px;
+    height: auto;
+    margin: 5px auto 0;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.nom-oeuvre{
+    background: #ed9d2b;
+    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    gap: 10px;
+
+}
+
+.nom-oeuvre>.fa-chevron-down{
+    font-size: 20px;
+}
+
+.toggle-description-oeuvre{
+    margin-top: 3px;
+    font-size: 18px;
+    opacity: 0;
+    background: #f1f1f1;
+    border-radius: 15px;
+
+    transition: 
+    opacity 0.4s  ease-in-out,
+    height 0.4s 0.4s ease-in-out;
+}
+
+.animated{
+    opacity: 1;
+    transition: 
+    height 0.4s ease-in-out,
+    opacity 0.4s 0.4s ease-in-out;
+}
+
+.toggle-description-oeuvre p{
+    margin: 0;
+    padding: 22px 20px 5px;
+    pointer-events: none;
+    line-height: 1.3;
+    
+}
+
+.boutons-oeuvre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

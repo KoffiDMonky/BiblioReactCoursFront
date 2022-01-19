@@ -6,6 +6,8 @@ import Modallivre from '../Modallivre/Modallivre';
 
 function Cartelivre(props) { //Fonction permettant de créer une carte livre et sa modale
     const livre = props.livre; //On stock ici les différents livres
+    const idLivre = livre.id;
+
     const [modalLivre, setModalLivre] = useState(false); //On déclare la variable d'état d'affichage de la modale "Livre"
   
     const toggleModalLivre = () => { //La fonction permet de changer l'état de la modale "Livre" quand on l'appel pour l'afficher ou pas

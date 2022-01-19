@@ -34,7 +34,7 @@ function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'aute
           </div>
           <div className="bouton-carte d-flex flex-row flex-wrap align-items-center justify-content-center">
             <button
-              className="btn btn-info w-100 consulter"
+              className="btn btn-warning w-100 consulter"
               onClick={toggleModalAuteur}
             >
               Consulter Bibliographie

@@ -1,7 +1,7 @@
 function Biblioauteur(props) {
 
     const fermerBiblio = props.bibliographie;
-    const auteur = props.auteur;
+    const auteur = props.auteur[0];
     const oeuvres = auteur.oeuvres;
 
     const listeOeuvres = oeuvres.map((oeuvre, k) => ( //On itère dans le tableau d'objet Auteur pour les afficher dans des cartes
@@ -17,7 +17,7 @@ function Biblioauteur(props) {
             className="close-modal btn btn-light"
             onClick={fermerBiblio}
           >
-            <i className="fas fa-times"></i>
+            <i className="fas fa-angle-double-left"></i>
           </button>
       </div>
   );

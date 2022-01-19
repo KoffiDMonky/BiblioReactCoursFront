@@ -85,9 +85,8 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       const biblioUtilisateur = this.props.utilisateur[this.id].livresID; //Constante qui stock la collection de livre de l'utilisateur (sous forme de tableau contenant les ID des livres) dont on veut consulter la collection
       const stockLivre = this.props.livre; //On déclare la variable stockLivre pour récupérer les propriétés de livre
       const auteur = this.props.auteur; //On déclare la variable auteur pour récupérer les propriétés de auteur
-      const listeAuteur = this.props.auteur; //On déclare la variable listeAuteur pour récupérer les propriétés d'auteur
-      const listeGenre = this.props.genre; //On déclare la variable listeGenre pour récupérer les propriétés de genre
-    
+      const listeAuteur = this.props.livre.auteur; //On déclare la variable listeAuteur pour récupérer les propriétés d'auteur
+      const listeGenre = this.props.genre; //On déclare la variable listeGenre pour récupérer les propriétés de genre 
       
   
       if (consulterBiblioUtilisateurs) {//Si consulterBiblioUtilisateurs: True, on affiche la collection de livre
@@ -100,7 +99,7 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
   
       } else if (consulterAuteurs) { //Si consulterAuteurs: True, on affiche la liste d'auteur
   
-        affichage = <Listeauteurs auteur={listeAuteur}/>
+        affichage = <Listeauteurs auteur={auteur}/>
   
       } else if (consulterGenres) { //Si consulterGenres: True, on affiche la liste de genre
   

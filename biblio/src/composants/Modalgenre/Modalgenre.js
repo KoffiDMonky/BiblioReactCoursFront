@@ -4,23 +4,21 @@ import './Modalgenre.css';
 
 function Modalgenre(props) {
     const genre = props.genre;
-    const livre = genre.livres;
+    const livres = genre.livres;
     const toggleModal = props.toggleModal;
+
+    const listeLivres = livres.map((livre, k) => ( //On itère dans le tableau d'objet Auteur pour les afficher dans des cartes
+    <li key={k} id={k} className="list-group-item">{livre}</li>));
   
     return (
       <div className="overlay">
         <div className="fenetre-modal">
           <h1>{genre.nomGenre}</h1>
-          {/* <GenreLivre genre={genre} /> */}
-          <h6>Oeuvres</h6>
+          <h6>Livres du genre:</h6>
   
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec nunc
-            sollicitudin, lobortis ligula eget, suscipit magna. Integer cursus at
-            purus sit amet consectetur. Vivamus tristique sapien quis lectus
-            faucibus, tincidunt porta quam tristique. Pellentesque imperdiet nisl
-            blandit justo volutpat ornare.
-          </p>
+          <ul className="list-group list-group-flush">
+          {listeLivres}
+        </ul>
           <button className="close-modal btn btn-light" onClick={toggleModal}>
             <i className="fas fa-times"></i>
           </button>

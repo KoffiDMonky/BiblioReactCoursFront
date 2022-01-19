@@ -34,7 +34,7 @@ function Cartegenre(props) {
             </div>
             <div className="bouton-carte d-flex flex-row flex-wrap align-items-center justify-content-center">
               <button
-                className="btn btn-info w-100 consulter"
+                className="btn btn-danger w-100 consulter"
                 onClick={toggleModalGenre}
               >
                 Consulter

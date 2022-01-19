@@ -1,13 +1,15 @@
-import './AuteurLivre.css';
+import './AccordeonAuteur.css';
 import React, { useState, useRef, useEffect } from 'react';
 
-//--------------------------------------- Composant Auteur du livre---------------------------------------------//
+//--------------------------------------- Composant Auteur du livre (Accordéon dans la fiche livre)---------------------------------------------//
 
-function AuteurLivre(props) { //Fonction permettant d'afficher le composant "accordéon" Auteur du livre contenu dans la modale d'un livre
+function AccordeonAuteur(props) { //Fonction permettant d'afficher le composant "accordéon" Auteur du livre contenu dans la modale d'un livre
 
     //On stock si dessous les propriétés des auteurs pour le afficher dynamiquement et les variable d'état permettant d'ouvrir/fermer le composant accordéon
+
     const auteurLivre = props.auteur;
-    const bio = auteurLivre.bio;
+    const nomAuteur = auteurLivre[0].nomAuteur;
+    const bio = auteurLivre[0].bio;
     const affichageBibliographie = props.bibliographie;
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
@@ -21,13 +23,13 @@ function AuteurLivre(props) { //Fonction permettant d'afficher le composant "acc
     useEffect(() => { // Permet de mettre à jour la taille de la div qui contient la description de l'auteur
       setHeightEl(`${refHeight.current.scrollHeight}px`);
     }, []);
-  
+
     return (
       //Affichage du composant Auteur du livre
       <div onClick={toggleState} className="auteur">
         <div className="nom-auteur">
           <h3>
-            {auteurLivre.nomAuteur} {/* Auteur: {auteur.prenom} {auteur.prenom} */}
+            {nomAuteur} 
           </h3>
           <i className="fas fa-chevron-down"></i>
         </div>
@@ -53,4 +55,4 @@ function AuteurLivre(props) { //Fonction permettant d'afficher le composant "acc
     );
   }
 
-export default AuteurLivre;
+export default AccordeonAuteur;
