@@ -4,7 +4,7 @@ import './Navbar.css';
 //--------------------------------------- Composant navbar---------------------------------------------//
 
 function Navbar(props) { //Fonction permettant d'afficher la navbar
-    return (
+  return (
       //Affichage de la Navbar
       <div className="navbar">
         <div className="titre">
@@ -13,18 +13,6 @@ function Navbar(props) { //Fonction permettant d'afficher la navbar
         </div>
   
         <div className="bonjour"> - Bonjour {props.name} -</div>
-  
-        {/* <div className="search-container">
-          <input
-            type="text"
-            name="search"
-            placeholder="Titre, genre ou auteur..."
-            className="search-input"
-          />
-          <a href="#" className="search-btn">
-            <i className="fas fa-search"></i>
-          </a>
-        </div> */}
       </div>
     );
   }
