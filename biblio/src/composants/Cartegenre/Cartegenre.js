@@ -20,12 +20,9 @@ function Cartegenre(props) {
     return (
       <div>
         <div className="carte genre">
-          {/* <div className="image-carte d-flex justify-content-center align-items-center ">
-            <img
-              src="assets/images/user.jfif"
-              alt=""
-            ></img>
-          </div> */}
+          <div className="image-carte d-flex justify-content-center align-items-center ">
+          <img src="https://img.icons8.com/ios-filled/100/000000/storytelling.png"/>
+          </div>
           <div className="corps-carte">
             <div className="identite-livre d-flex flex-column justify-content-center align-items-center">
               <div className="titre-carte d-flex flex-column justify-content-center align-items-center">

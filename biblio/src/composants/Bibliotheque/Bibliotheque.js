@@ -3,7 +3,6 @@ import Utilisateurs from './../Utilisateurs/Utilisateurs';
 import Livres from './../Livres/Livres';
 import Listeauteurs from './../Listeauteurs/Listeauteurs';
 import Listegenres from './../Listegenres/Listegenres';
-import Stocklivres from './../Stocklivres/Stocklivres';
 import './Bibliotheque.css';
 
 //--------------------------------------- Composant Bibliothèque---------------------------------------------//
@@ -14,7 +13,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       this.state = {
         //On définit la valeur de "consulterBiblioUtilisateurs", "consulterLivres", "consulterAuteurs","consulterGenres" à false
         consulterBiblioUtilisateurs: false,
-        consulterLivres: false,
         consulterAuteurs: false,
         consulterGenres: false,
       };
@@ -25,28 +23,16 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
     voirUtilisateur = (e) => {// La fonction fléchée "voirUtilisateur" permet de passer "consulterBiblioUtilisateurs" à true ce qui va permettre d'afficher la collection de livre de l'utilisateur et de récupérer l'id correspond à la carte utilisateur consulté
       this.setState({
         consulterBiblioUtilisateurs: true,
-        consulterLivres: false,
         consulterAuteurs: false,
         consulterGenres: false
       });
       this.id = e.target.id; // Définit l'id correspondant à la carte consultée
     };
   
-    voirLivres = () => {
-      // La fonction fléchée "voirLivres" permet de passer "consulterLivres" à true et les autres states à false, ce qui va permettre d'afficher la collection de livre distinct dans la bibliothèque
-      this.setState({
-        consulterBiblioUtilisateurs: false,
-        consulterLivres: true,
-        consulterAuteurs: false,
-        consulterGenres: false,
-      });
-    };
-  
     voirAuteurs = () => {
       // La fonction fléchée "voirAuteurs" permet de passer "consulterAuteurs" à true et les autres states à false, ce qui va permettre d'afficher la liste d'auteur dans la bibliothèque
       this.setState({
         consulterBiblioUtilisateurs: false,
-        consulterLivres: false,
         consulterAuteurs: true,
         consulterGenres: false,
       });
@@ -56,7 +42,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       // La fonction fléchée "voirGenres" permet de passer "consulterGenres" à true et les autres states à false ce qui va permettre d'afficher la liste de genre dans la bibliothèque
       this.setState({
         consulterBiblioUtilisateurs: false,
-        consulterLivres: false,
         consulterAuteurs: false,
         consulterGenres: true,
       });
@@ -66,7 +51,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       // La fonction fléchée "retourListeUtilisateurs" permet de revenir à la liste des utilisateurs en redéfinissant tout les states à false.
       this.setState({
         consulterBiblioUtilisateurs: false,
-        consulterLivres: false,
         consulterAuteurs: false,
         consulterGenres: false,
       });
@@ -74,7 +58,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
   
     render() {
       const consulterBiblioUtilisateurs = this.state.consulterBiblioUtilisateurs; //Constante qui stock le state de consulterBiblioUtilisateurs
-      const consulterLivres = this.state.consulterLivres; //Constante qui stock le state de consulterLivres
       const consulterAuteurs = this.state.consulterAuteurs; //Constante qui stock le state de consulterAuteurs
       const consulterGenres = this.state.consulterGenres; //Constante qui stock le state de consulterGenres
   
@@ -92,10 +75,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       if (consulterBiblioUtilisateurs) {//Si consulterBiblioUtilisateurs: True, on affiche la collection de livre
         
         affichage = <Livres utilisateur={nomUtilisateur} biblio={biblioUtilisateur} stock={stockLivre} auteur={auteur}/>
-  
-      } else if (consulterLivres) { //Si consulterLivres: True, on affiche la collection de livre
-  
-        affichage = <Stocklivres livre={stockLivre} />
   
       } else if (consulterAuteurs) { //Si consulterAuteurs: True, on affiche la liste d'auteur
   
@@ -119,14 +98,14 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
               className="btn btn-light w-40 editer"
               onClick={this.retourListeUtilisateurs}
             >
-              <i className="fas fa-angle-double-left"></i>
+              Utilisateurs
             </button>
-            <button
+            {/* <button
               className="btn btn-light w-40 editer"
               onClick={this.voirLivres}
             >
               Livres
-            </button>
+            </button> */}
             <button className="btn btn-light w-40 editer" onClick={this.voirAuteurs}>Auteurs</button>
             <button className="btn btn-light w-40 editer" onClick={this.voirGenres}>Genres</button>
           </div>

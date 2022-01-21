@@ -6,7 +6,7 @@
     padding-bottom: 20px;
 }
 
-.auteur .nom-auteur{
+.nom-auteur{
     background: #17a2b8;
     cursor: pointer;
     display: flex;

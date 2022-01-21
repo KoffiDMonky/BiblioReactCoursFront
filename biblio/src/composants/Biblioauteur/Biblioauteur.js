@@ -1,6 +1,7 @@
 function Biblioauteur(props) {
 
-    const fermerBiblio = props.bibliographie;
+    //On stock si dessous les propriétés de l'auter et ses oeuvres pour le afficher dynamiquement et la fonction permettant de toggle la bibliographie
+    const toggleBiblio = props.bibliographie;
     const auteur = props.auteur[0];
     const oeuvres = auteur.oeuvres;
 
@@ -15,7 +16,7 @@ function Biblioauteur(props) {
         </ul>
         <button
             className="close-modal btn btn-light"
-            onClick={fermerBiblio}
+            onClick={toggleBiblio}
           >
             <i className="fas fa-angle-double-left"></i>
           </button>

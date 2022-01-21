@@ -18,14 +18,12 @@ function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'aute
   };
 
   return (
-    <div>
+    <>
       <div className="carte auteur">
-        {/* <div className="image-carte d-flex justify-content-center align-items-center ">
-          <img
-            src="assets/images/user.jfif"
-            alt=""
-          ></img>
-        </div> */}
+      <div className="image-carte">
+      <img src="https://img.icons8.com/ios/100/000000/mark-twain.png"/>
+      <img src="https://img.icons8.com/ios/100/000000/pretty-woman.png"/>
+          </div>
         <div className="corps-carte">
           <div className="identite-livre d-flex flex-column justify-content-center align-items-center">
             <div className="titre-carte d-flex flex-column justify-content-center align-items-center">
@@ -45,7 +43,7 @@ function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'aute
       {modalAuteur && (
         <Modalauteur auteur={auteur} toggleModal={toggleModalAuteur} />
       )}
-    </div>
+    </>
   );
 }
 

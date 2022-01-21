@@ -6,11 +6,12 @@ import React, { useState, useRef, useEffect } from 'react';
 function AccordeonAuteur(props) { //Fonction permettant d'afficher le composant "accordéon" Auteur du livre contenu dans la modale d'un livre
 
     //On stock si dessous les propriétés des auteurs pour le afficher dynamiquement et les variable d'état permettant d'ouvrir/fermer le composant accordéon
-
     const auteurLivre = props.auteur;
     const nomAuteur = auteurLivre[0].nomAuteur;
     const bio = auteurLivre[0].bio;
     const affichageBibliographie = props.bibliographie;
+
+    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
   

@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
@@ -57,12 +56,12 @@
 .carte {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
     width: 250px;
     min-height: 350px;
-    /* border: solid 1px #1A1A23 ; */
     border-radius: 20px;
 
     background: #fdfdfd;
@@ -76,8 +75,13 @@
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
 }
 
-.image-carte {
-    height: 140px;
+.utilisateur .image-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #05f7ff;
+    width: 100%;
+    height: 200px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -104,6 +108,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+.nom-carte h4{
+    margin-bottom: 0;
 }
 
 .bouton-carte {

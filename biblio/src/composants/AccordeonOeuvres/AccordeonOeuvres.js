@@ -7,7 +7,8 @@ function AccordeonOeuvres(props) { //Fonction permettant d'afficher le composant
 
     //On stock si dessous les propriétés des oeuvres pour le afficher dynamiquement et les variable d'état permettant d'ouvrir/fermer le composant accordéon
     const oeuvres = props.oeuvres;
-    const affichageBibliographie = props.bibliographie;
+
+    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
   
@@ -24,6 +25,7 @@ function AccordeonOeuvres(props) { //Fonction permettant d'afficher le composant
     const listeOeuvres = oeuvres.map((oeuvre, k) => ( //On itère dans le tableau d'objet Oeuvres pour les afficher à la volée dans une liste
     <li key={k} id={k} className="list-group-item">{oeuvre}</li>));
 
+    //Affichage de la liste des oeuvres de l'auteur
     const AffichageOeuvres = <ul className="list-group list-group-flush">
                 {listeOeuvres}
               </ul>
