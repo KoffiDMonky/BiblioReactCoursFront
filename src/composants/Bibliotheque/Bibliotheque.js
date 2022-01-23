@@ -108,7 +108,9 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
             <button className="btn btn-light w-40 editer" onClick={this.voirAuteurs}>Auteurs</button>
             <button className="btn btn-light w-40 editer" onClick={this.voirGenres}>Genres</button>
           </div>
-          {affichage}
+        
+            {affichage}
+
         </div>
       );
     }
