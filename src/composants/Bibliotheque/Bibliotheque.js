@@ -69,7 +69,7 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
       const stockLivre = this.props.livre; //On déclare la variable stockLivre pour récupérer les propriétés de livre
       const auteur = this.props.auteur; //On déclare la variable auteur pour récupérer les propriétés de auteur
       const listeGenre = this.props.genre; //On déclare la variable listeGenre pour récupérer les propriétés de genre 
-      
+
   
       if (consulterBiblioUtilisateurs) {//Si consulterBiblioUtilisateurs: True, on affiche la collection de livre
         

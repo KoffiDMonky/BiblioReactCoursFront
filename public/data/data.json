@@ -182,7 +182,7 @@
       "resume":
         "Ce roman retrace les voyages et les aventures de Don Quichotte et Sancho Panza. Don Quichotte est un Hidalgo (gentilhomme de la noblesse) obsédé par la chevalerie et Sancho Panza, un paysan obsédé par la nourriture, est son écuyer.  Sauf à la fin, où vaincu, il rentre chez lui, malgré les suppliques de Sancho Panza."
     }
-  
+
     ],
     "auteur":[{
       "id": "0",
@@ -304,5 +304,4 @@
     }]
 
   }
-}     
-
+}
