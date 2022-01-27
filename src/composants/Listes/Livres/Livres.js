@@ -1,4 +1,4 @@
-import Cartelivre from '../Cartelivre/Cartelivre';
+import Cartelivre from '../../Cartes/Cartelivre/Cartelivre';
 
 
 //--------------------------------------- Composant Livres (d'un utilisateur)---------------------------------------------//

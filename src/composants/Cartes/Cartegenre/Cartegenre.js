@@ -4,14 +4,14 @@ import Modalgenre from '../Modalgenre/Modalgenre'
 
 //--------------------------------------- Composant Carte Genre---------------------------------------------//
 
-function Cartegenre(props) {
-    const genre = props.genre;
-    const [modalGenre, setModalGenre] = useState(false);
+function Cartegenre(props) { //Fonction permettant d'afficher les cartes de genre
+    const genre = props.genre; //On stock ici les différents genres
+    const [modalGenre, setModalGenre] = useState(false); //On déclare la variable d'état d'affichage de la modale "Genre"
   
     const toggleModalGenre = () => {
       setModalGenre(!modalGenre);
 
-      //ajouter la class 'modal-ouvert' au body pour bloque rla scroll barre et inversement
+      //ajouter la class 'modal-ouvert' au body pour bloquer la scrollbar et inversement
         const body = document.body;
         body.classList.toggle("modal-ouverte");
 

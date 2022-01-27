@@ -1,13 +1,11 @@
 import './Cartelivre.css';
 import React, { useState } from 'react';
-import Modallivre from '../Modallivre/Modallivre';
+import Modallivre from '../../Modals/Modallivre/Modallivre';
 
 //--------------------------------------- Composant Carte Livre---------------------------------------------//
 
 function Cartelivre(props) { //Fonction permettant de créer une carte livre et sa modale
     const livre = props.livre; //On stock ici les différents livres
-    // const idLivre = livre.id;
-    console.log(props);
 
     const [modalLivre, setModalLivre] = useState(false); //On déclare la variable d'état d'affichage de la modale "Livre"
   

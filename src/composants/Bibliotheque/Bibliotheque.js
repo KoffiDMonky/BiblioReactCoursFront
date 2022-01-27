@@ -1,6 +1,6 @@
 import React from 'react';
 import Utilisateurs from './../Utilisateurs/Utilisateurs';
-import Livres from './../Livres/Livres';
+import Livres from './../Listes/Livres/Livres';
 import Listeauteurs from './../Listeauteurs/Listeauteurs';
 import Listegenres from './../Listegenres/Listegenres';
 
@@ -99,12 +99,6 @@ class Bibliotheque extends React.Component {//Classe permettant d'afficher la li
             >
               Utilisateurs
             </button>
-            {/* <button
-              className="btn btn-light w-40 editer"
-              onClick={this.voirLivres}
-            >
-              Livres
-            </button> */}
             <button className="btn btn-light w-40 editer" onClick={this.voirAuteurs}>Auteurs</button>
             <button className="btn btn-light w-40 editer" onClick={this.voirGenres}>Genres</button>
           </div>

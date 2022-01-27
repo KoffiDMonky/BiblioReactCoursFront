@@ -5,13 +5,13 @@ import Modalauteur from '../Modalauteur/Modalauteur'
 //--------------------------------------- Composant Carte Auteur---------------------------------------------//
 
 function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'auteur
-  const auteur = props.auteur;
-  const [modalAuteur, setModalAuteur] = useState(false);
+  const auteur = props.auteur; //On stock ici les différents auteurs
+  const [modalAuteur, setModalAuteur] = useState(false); //On déclare la variable d'état d'affichage de la modale "Auteur"
 
   const toggleModalAuteur = () => {
     setModalAuteur(!modalAuteur);
 
-    //ajouter la class 'modal-ouvert' au body pour bloque rla scroll barre et inversement
+    //ajouter la class 'modal-ouvert' au body pour bloquer la scrollbar et inversement
     const body = document.body;
     body.classList.toggle("modal-ouverte");
 

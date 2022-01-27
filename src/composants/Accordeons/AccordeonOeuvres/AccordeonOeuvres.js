@@ -8,7 +8,7 @@ function AccordeonOeuvres(props) { //Fonction permettant d'afficher le composant
     //On stock si dessous les propriétés des oeuvres pour le afficher dynamiquement et les variable d'état permettant d'ouvrir/fermer le composant accordéon
     const oeuvres = props.oeuvres;
 
-    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon
+    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon (toggle) et définir sa taille (heightEl)
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
   
@@ -41,12 +41,12 @@ function AccordeonOeuvres(props) { //Fonction permettant d'afficher le composant
         </div>
         <div
           ref={refHeight}
-          className={
+          className={ //Si toggle est a True, on affiche la classe "toggle-description-oeuvre animated", sinon on affiche "toggle-description-oeuvre"
             toggle
               ? "toggle-description-oeuvre animated"
               : "toggle-description-oeuvre"
           }
-          style={{ height: toggle ? `${heightEl}` : "0px" }}
+          style={{ height: toggle ? `${heightEl}` : "0px" }} //Si toggle est a True, la taille de la div = heightEl, sinon elle est à 0
         >
             {AffichageOeuvres}                 
         </div>

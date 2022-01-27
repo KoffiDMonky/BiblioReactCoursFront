@@ -11,7 +11,7 @@ function AccordeonAuteur(props) { //Fonction permettant d'afficher le composant 
     const bio = auteurLivre[0].bio;
     const affichageBibliographie = props.bibliographie;
 
-    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon
+    //Variable d'état toggle et heighEl pour lancer l'animation de l'accordeon (toggle) et définir sa taille (heightEl)
     const [toggle, setToggle] = useState(false);
     const [heightEl, setHeightEl] = useState();
   
@@ -36,12 +36,12 @@ function AccordeonAuteur(props) { //Fonction permettant d'afficher le composant 
         </div>
         <div
           ref={refHeight}
-          className={
+          className={ //Si toggle est a True, on affiche la classe "toggle-description-auteur animated", sinon on affiche "toggle-description-auteur"
             toggle
               ? "toggle-description-auteur animated"
               : "toggle-description-auteur"
           }
-          style={{ height: toggle ? `${heightEl}` : "0px" }}
+          style={{ height: toggle ? `${heightEl}` : "0px" }} //Si toggle est a True, la taille de la div = heightEl, sinon elle est à 0
         >
           <p>
             {bio}
