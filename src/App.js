@@ -12,10 +12,10 @@ function App() {
 
   const getData = async () => { //Fonction permettant de récupérer les donnée de data.Json avec la méthode fetch en asynchrone
     try {
-      const response = await fetch("./BiblioReactCoursFront/data/data.json"); //On configure l'URl permettant de récupérer les données
+      const response = await fetch("./data/data.json"); //On configure l'URl permettant de récupérer les données
       const json = await response.json(); //On stock la réponse dans la variable json
       setData(json.data); //Puis on charge json dans le tableau data
-    } catch (error) {
+    } catch (error) { //Affichage de l'erreur si l'on le rentre pas dans le try
       console.error(error);
     } finally {
       setLoading(false);

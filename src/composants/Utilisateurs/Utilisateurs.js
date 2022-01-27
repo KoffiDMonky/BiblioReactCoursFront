@@ -1,4 +1,3 @@
-import './Utilisateurs.css';
 import Carteutilisateur from '../Carteutilisateur/Carteutilisateur';
 
 //--------------------------------------- Composant Utilisateur---------------------------------------------//

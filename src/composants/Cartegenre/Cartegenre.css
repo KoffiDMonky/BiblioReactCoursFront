@@ -7,3 +7,9 @@
     height: 217px;
     border-radius: 15px 15px 0 0;
 }
+
+.genre-carte{
+    font-size: .8em;
+    margin-bottom: 10px;
+    text-align: center;
+}

@@ -25,12 +25,12 @@ function Carteauteur(props) { //Fonction permettant d'afficher les cartes d'aute
       <img src="https://img.icons8.com/ios/100/000000/pretty-woman.png"/>
           </div>
         <div className="corps-carte">
-          <div className="identite-livre d-flex flex-column justify-content-center align-items-center">
-            <div className="titre-carte d-flex flex-column justify-content-center align-items-center">
+          <div className="identite-livre">
+            <div className="titre-carte">
               <h2>{auteur.nomAuteur}</h2>
             </div>
           </div>
-          <div className="bouton-carte d-flex flex-row flex-wrap align-items-center justify-content-center">
+          <div className="bouton-carte">
             <button
               className="btn btn-warning w-100 consulter"
               onClick={toggleModalAuteur}

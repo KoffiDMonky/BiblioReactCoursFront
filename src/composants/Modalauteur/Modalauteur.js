@@ -1,4 +1,3 @@
-import "./Modalauteur.css";
 import AccordeonOeuvres from "../AccordeonOeuvres/AccordeonOeuvres";
 //--------------------------------------- Composant Modal Auteur---------------------------------------------//
 

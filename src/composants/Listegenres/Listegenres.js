@@ -1,4 +1,3 @@
-import './Listegenres.css';
 import Cartegenre from '../Cartegenre/Cartegenre';
 
 

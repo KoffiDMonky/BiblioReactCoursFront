@@ -3,7 +3,7 @@ import Utilisateurs from './../Utilisateurs/Utilisateurs';
 import Livres from './../Livres/Livres';
 import Listeauteurs from './../Listeauteurs/Listeauteurs';
 import Listegenres from './../Listegenres/Listegenres';
-import './Bibliotheque.css';
+
 
 //--------------------------------------- Composant Bibliothèque---------------------------------------------//
 

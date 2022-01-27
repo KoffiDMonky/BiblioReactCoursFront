@@ -1,4 +1,3 @@
-import "./Modallivre.css";
 import React, { useState } from 'react';
 import AccordeonAuteur from "../AccordeonAuteur/AccordeonAuteur";
 import Biblioauteur from "../Biblioauteur/Biblioauteur";

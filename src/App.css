@@ -1,5 +1,25 @@
 /* ----------------------------------------------------------------FENETRE MODALE------------------------------------------------------------------- */
 
+.identite-livre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titre-carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bouton-carte{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 .overlay {
   position: fixed;
@@ -44,6 +64,12 @@
   top: 10px;
   right: 10px;
   padding: 5px 7px;
+}
+
+.list-group-flush>.list-group-item {
+  font-size: 20px;
+  text-align: center;
+  min-width: 350px;
 }
 
 
