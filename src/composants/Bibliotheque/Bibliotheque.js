@@ -1,8 +1,8 @@
 import React from 'react';
-import Utilisateurs from './../Utilisateurs/Utilisateurs';
+import Utilisateurs from './../Listes/Utilisateurs/Utilisateurs';
 import Livres from './../Listes/Livres/Livres';
-import Listeauteurs from './../Listeauteurs/Listeauteurs';
-import Listegenres from './../Listegenres/Listegenres';
+import Listeauteurs from './../Listes/Listeauteurs/Listeauteurs';
+import Listegenres from './../Listes/Listegenres/Listegenres';
 
 
 //--------------------------------------- Composant Bibliothèque---------------------------------------------//

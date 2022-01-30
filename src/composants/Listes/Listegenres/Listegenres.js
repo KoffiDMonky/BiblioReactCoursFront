@@ -1,4 +1,4 @@
-import Cartegenre from '../Cartegenre/Cartegenre';
+import Cartegenre from './../../Cartes/Cartegenre/Cartegenre';
 
 
 //--------------------------------------- Composant Liste de genre---------------------------------------------//

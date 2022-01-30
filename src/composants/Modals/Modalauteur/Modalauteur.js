@@ -1,4 +1,4 @@
-import AccordeonOeuvres from "../AccordeonOeuvres/AccordeonOeuvres";
+import AccordeonOeuvres from "./../../Accordeons/AccordeonOeuvres/AccordeonOeuvres";
 //--------------------------------------- Composant Modal Auteur---------------------------------------------//
 
 function Modalauteur(props) {

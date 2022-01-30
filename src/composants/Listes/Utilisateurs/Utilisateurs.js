@@ -1,4 +1,4 @@
-import Carteutilisateur from '../Carteutilisateur/Carteutilisateur';
+import Carteutilisateur from './../../Cartes/Carteutilisateur/Carteutilisateur';
 
 //--------------------------------------- Composant Utilisateur---------------------------------------------//
 

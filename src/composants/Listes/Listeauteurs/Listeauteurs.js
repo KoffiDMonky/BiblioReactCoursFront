@@ -1,4 +1,4 @@
-import Carteauteur from '../Carteauteur/Carteauteur';
+import Carteauteur from './../../Cartes/Carteauteur/Carteauteur';
 
 //--------------------------------------- Composant Liste d'auteurs---------------------------------------------//
 

@@ -1,6 +1,6 @@
 import './Cartegenre.css';
 import React, { useState } from 'react';
-import Modalgenre from '../Modalgenre/Modalgenre'
+import Modalgenre from './../../Modals/Modalgenre/Modalgenre'
 
 //--------------------------------------- Composant Carte Genre---------------------------------------------//
 

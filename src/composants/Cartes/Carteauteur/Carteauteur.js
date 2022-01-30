@@ -1,6 +1,6 @@
 import './Carteauteur.css';
 import React, { useState } from 'react';
-import Modalauteur from '../Modalauteur/Modalauteur'
+import Modalauteur from './../../Modals/Modalauteur/Modalauteur'
 
 //--------------------------------------- Composant Carte Auteur---------------------------------------------//
 
